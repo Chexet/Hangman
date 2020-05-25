@@ -1,38 +1,76 @@
+
 .App {
-  text-align: center;
+    background: url("./assets/hangman-background.jpg");
+    height: 100vh;
+    width: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    margin: 0;
+    font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+    margin: 0 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gameArea {
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+    border: 15px solid white;
+    margin-top: 5%;
+    height: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#underscores {
+    letter-spacing: 10px;
+    font-size: 30px;
 }
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 35%;
+    margin: auto;
+}
+
+.letterBtn {
+    background-color: #ffc107;
+    border-style: none;
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 5px #ff9800;
+    color: white;
+    font-size: 18px;
+    font-family: 'Coming Soon';
+    margin: 5px 2px;
+    font-weight: bold;
+}
+
+.letterBtn:disabled {
+    background-color: #bdbdbd;
+    box-shadow: 0 5px #a1a1a1;
+}
+
+#resetBtn {
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 90px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #ee0e0e;
+    color: white;
+    font-family: 'Coming Soon';
+    font-weight: bold;
+}
+
